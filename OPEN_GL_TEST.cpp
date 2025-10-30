@@ -2,6 +2,8 @@
 #include "GLFW/glfw3.h"
 #include <iostream>
 #include "glm/glm.hpp"
+#include "Shader.hpp"
+#include "ShaderProgram.hpp"
 
 int main(void)
 {
@@ -11,7 +13,6 @@ int main(void)
 	{
 		return -1;
 	}
-
 
 	window = glfwCreateWindow(800, 800, "Test", NULL, NULL);
 
@@ -36,6 +37,7 @@ int main(void)
 		 0.0f, 0.5f, 0.0f
 	};
 
+	const char* vertexShader = Shader
 
 	glClearColor(0.1f, 0.2f, 0.3f, 1.0f);
 
