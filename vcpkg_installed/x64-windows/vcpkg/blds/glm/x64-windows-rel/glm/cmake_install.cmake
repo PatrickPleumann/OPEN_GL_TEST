@@ -1,8 +1,8 @@
-# Install script for directory: C:/SAE Abgaben/OPEN_GL_TEST/vcpkg_installed/x64-windows/vcpkg/blds/glm/src/1.0.1-cf6930f99d.clean/glm
+# Install script for directory: D:/SAE Abgaben/OPEN_GL_TEST/vcpkg_installed/x64-windows/vcpkg/blds/glm/src/1.0.1-cf6930f99d.clean/glm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/SAE Abgaben/OPEN_GL_TEST/vcpkg_installed/x64-windows/vcpkg/pkgs/glm_x64-windows")
+  set(CMAKE_INSTALL_PREFIX "D:/SAE Abgaben/OPEN_GL_TEST/vcpkg_installed/x64-windows/vcpkg/pkgs/glm_x64-windows")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

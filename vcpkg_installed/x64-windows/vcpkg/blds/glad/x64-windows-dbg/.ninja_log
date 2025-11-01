@@ -1,0 +1,8 @@
+# ninja log v6
+6	803	7837139789876027	include/glad/glad.h	4e19f16f66988e3c
+6	803	7837139789876027	src/glad.c	4e19f16f66988e3c
+6	803	7837139789876027	D:/SAE Abgaben/OPEN_GL_TEST/vcpkg_installed/x64-windows/vcpkg/blds/glad/x64-windows-dbg/include/glad/glad.h	4e19f16f66988e3c
+6	803	7837139789876027	D:/SAE Abgaben/OPEN_GL_TEST/vcpkg_installed/x64-windows/vcpkg/blds/glad/x64-windows-dbg/src/glad.c	4e19f16f66988e3c
+803	1045	7837139790306953	CMakeFiles/glad.dir/src/glad.c.obj	acfa33d9762f6621
+1046	1087	7837139792752805	glad.lib	2ff76d4d5dc1f8c6
+1087	1165	7837139793067690	CMakeFiles/install.util	d3686e83e88e3916

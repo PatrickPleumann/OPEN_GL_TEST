@@ -2,21 +2,21 @@ Package: vcpkg-cmake-config
 Version: 2024-05-23
 Architecture: x64-windows
 Multi-Arch: same
-Abi: 887427ad18937047d2d72d9d307dc116e280b8a89ff4a35dc95785d8cfd7417a
+Abi: 6fd363ac13aa08561107c9b969d53e6fc0fd88fe1e45541e617732b41391b9ed
 Status: install ok installed
 
 Package: vcpkg-cmake
 Version: 2024-04-23
 Architecture: x64-windows
 Multi-Arch: same
-Abi: 3b1b6778d69fc855a23dd9f06f7614622445452ab905dfb90c019c4a409ed7c2
+Abi: 1c04ccd5b9087ee71e871d5ef9f7159ff503741e6443cac697de510cfc5e62c3
 Status: install ok installed
 
 Package: egl-registry
 Version: 2024-01-25
 Architecture: x64-windows
 Multi-Arch: same
-Abi: fd4d4398b61d0bb81dc6801fb88c963dc7ed5afd276bc280534428397192a297
+Abi: bc27e807633c7174c7a37c00574a047f2e21599873f257c5e79a1f6552b19b66
 Description: EGL API and Extension Registry
 Status: install ok installed
 
@@ -26,7 +26,7 @@ Port-Version: 1
 Depends: egl-registry
 Architecture: x64-windows
 Multi-Arch: same
-Abi: 90285f6a31f2b7bb017e2c300e9d552497fb6ba616ec0dd7961c4edd850659df
+Abi: 5c316be0e870da0f5d5d5b4322d77e63a23bdf32265c0678fdeef5c286185342
 Description: OpenGL, OpenGL ES, and OpenGL ES-SC API and Extension Registry
 Status: install ok installed
 
@@ -35,7 +35,7 @@ Version: 0.1.36
 Depends: egl-registry, opengl-registry, vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-windows
 Multi-Arch: same
-Abi: 2599ea2c21ac4f8b21e3f2d7f54d8a9d94fa510bd87d3d300c95a0701c90aedf
+Abi: 9a327e8cfebee1831d1bfcb84231c38d9420977453071c4743d2d13dc2d39bf4
 Description: Multi-Language Vulkan/GL/GLES/EGL/GLX/WGL Loader-Generator based on the official specs.
 Default-Features: loader
 Status: install ok installed
@@ -53,7 +53,7 @@ Port-Version: 1
 Depends: vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-windows
 Multi-Arch: same
-Abi: 4ecec440b239bfcd9204421d46cccec2ba398fda82203442ff06790ee3c20ac0
+Abi: 2297ff691b129d43f3b7595adeebaa620f5f26a61b74f910373550d3a74e64a7
 Description: GLFW is a free, Open Source, multi-platform library for OpenGL, OpenGL ES and Vulkan application development. It provides a simple, platform-independent API for creating windows, contexts and surfaces, reading input, handling events, etc.
 Status: install ok installed
 
@@ -62,7 +62,17 @@ Version: 2024-07-29
 Port-Version: 1
 Architecture: x64-windows
 Multi-Arch: same
-Abi: b4cd673a68c4327fcf111f0e7c02e779a3c6469a422232eaadca0dd971404df3
+Abi: 7c2eec74a5bd977c757ba6282976aee9303e9fafabb20cfaa10e8c68a3133faf
 Description: public domain header-only libraries
+Status: install ok installed
+
+Package: glm
+Version: 1.0.1
+Port-Version: 3
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 4fd7125378eb3cfe8b31822975682a97af52a3c67e9ebea864f72e11944f83ea
+Description: OpenGL Mathematics (GLM)
 Status: install ok installed
 

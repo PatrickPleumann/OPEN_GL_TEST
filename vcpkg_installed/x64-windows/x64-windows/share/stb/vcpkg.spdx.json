@@ -3,13 +3,13 @@
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-  "documentNamespace": "https://spdx.org/spdxdocs/stb-x64-windows-2024-07-29#1-523620e2-bdc2-44b8-8ad4-7f99181938ef",
-  "name": "stb:x64-windows@2024-07-29#1 b4cd673a68c4327fcf111f0e7c02e779a3c6469a422232eaadca0dd971404df3",
+  "documentNamespace": "https://spdx.org/spdxdocs/stb-x64-windows-2024-07-29#1-0d9d36d4-da6a-4413-a318-cb605b28a5c1",
+  "name": "stb:x64-windows@2024-07-29#1 7c2eec74a5bd977c757ba6282976aee9303e9fafabb20cfaa10e8c68a3133faf",
   "creationInfo": {
     "creators": [
-      "Tool: vcpkg-2024-09-30-ab8988503c7cffabfd440b243a383c0a352a023d"
+      "Tool: vcpkg-2025-04-01-9c604254140797833b6f76908435c9fcbf09920e"
     ],
-    "created": "2025-10-29T09:53:15Z"
+    "created": "2025-11-01T15:26:32Z"
   },
   "relationships": [
     {
@@ -71,6 +71,11 @@
       "spdxElementId": "SPDXRef-file-4",
       "relationshipType": "CONTAINED_BY",
       "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-4",
+      "relationshipType": "DEPENDENCY_MANIFEST_OF",
+      "relatedSpdxElement": "SPDXRef-port"
     }
   ],
   "packages": [
@@ -89,7 +94,7 @@
     {
       "name": "stb:x64-windows",
       "SPDXID": "SPDXRef-binary",
-      "versionInfo": "b4cd673a68c4327fcf111f0e7c02e779a3c6469a422232eaadca0dd971404df3",
+      "versionInfo": "7c2eec74a5bd977c757ba6282976aee9303e9fafabb20cfaa10e8c68a3133faf",
       "downloadLocation": "NONE",
       "licenseConcluded": "MIT OR CC-PDDC",
       "licenseDeclared": "NOASSERTION",
@@ -97,7 +102,7 @@
       "comment": "This is a binary package built by vcpkg."
     },
     {
-      "SPDXID": "SPDXRef-resource-1",
+      "SPDXID": "SPDXRef-resource-0",
       "name": "nothings/stb",
       "downloadLocation": "git+https://github.com/nothings/stb@f75e8d1cad7d90d72ef7a4661f1b994ef78b4e31",
       "licenseConcluded": "NOASSERTION",
@@ -113,7 +118,7 @@
   ],
   "files": [
     {
-      "fileName": "./C:/Users/patri/AppData/Local/vcpkg/registries/git-trees/c362152d1d02973e7b1ce777960f8a6876656560/FindStb.cmake",
+      "fileName": "./FindStb.cmake",
       "SPDXID": "SPDXRef-file-0",
       "checksums": [
         {
@@ -125,7 +130,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/patri/AppData/Local/vcpkg/registries/git-trees/c362152d1d02973e7b1ce777960f8a6876656560/portfile.cmake",
+      "fileName": "./portfile.cmake",
       "SPDXID": "SPDXRef-file-1",
       "checksums": [
         {
@@ -137,7 +142,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/patri/AppData/Local/vcpkg/registries/git-trees/c362152d1d02973e7b1ce777960f8a6876656560/usage",
+      "fileName": "./usage",
       "SPDXID": "SPDXRef-file-2",
       "checksums": [
         {
@@ -149,7 +154,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/patri/AppData/Local/vcpkg/registries/git-trees/c362152d1d02973e7b1ce777960f8a6876656560/vcpkg-cmake-wrapper.cmake",
+      "fileName": "./vcpkg-cmake-wrapper.cmake",
       "SPDXID": "SPDXRef-file-3",
       "checksums": [
         {
@@ -161,7 +166,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/patri/AppData/Local/vcpkg/registries/git-trees/c362152d1d02973e7b1ce777960f8a6876656560/vcpkg.json",
+      "fileName": "./vcpkg.json",
       "SPDXID": "SPDXRef-file-4",
       "checksums": [
         {
