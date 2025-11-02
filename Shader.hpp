@@ -1,10 +1,14 @@
-//#pragma once
-//#include "glad/glad.h"
-//#include <filesystem>
+#pragma once
+#include "glad/glad.h"
+#include <filesystem>
 
-//class Shader
-//{
-//public:
-//	//Shader(const std::filesystem::path& filePath);
-//};
+class Shader
+{
+public:
+	Shader(const std::filesystem::path& filePath, GLenum shaderType);
+	GLuint get() const { return id; }
+
+private:
+	GLuint id;
+};
 

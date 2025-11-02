@@ -135,6 +135,7 @@
     <ClCompile Include="OPEN_GL_TEST.cpp" />
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="ShaderProgram.cpp" />
+    <ClCompile Include="VertexBuffer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="FragmentShader.glsl" />
@@ -144,6 +145,7 @@
     <ClInclude Include="Shader.hpp" />
     <ClInclude Include="ShaderProgram.hpp" />
     <ClInclude Include="Vertex.hpp" />
+    <ClInclude Include="VertexBuffer.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
