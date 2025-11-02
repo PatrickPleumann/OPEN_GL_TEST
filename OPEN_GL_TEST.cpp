@@ -32,23 +32,18 @@ int main(void)
 		return -2;
 	}
 
-	std::vector<Vertex> vertices =
+	std::vector<Vertex> vertices
 	{
-		{.pos = { 0.5f, -0.5f, 0.0f},  .color = { 1.0f, 0.0f, 0.0f, 1.0f }},
-		{.pos = { 0.5f, -0.5f, 0.0f},  .color = { 0.0f, 1.0f, 0.0f, 1.0f }},
-		{.pos = { 0.0f,  0.5f, 0.0f},  .color = { 0.0f, 0.0f, 1.0f, 1.0f }}
+		Vertex{ .pos = { 0.5f, -0.5f, 0.0f},  .color = { 1.0f, 0.0f, 0.0f, 1.0f } },
+		Vertex{ .pos = { 0.5f, -0.5f, 0.0f},  .color = { 0.0f, 1.0f, 0.0f, 1.0f } },
+		Vertex{ .pos = { 0.0f,  0.5f, 0.0f},  .color = { 0.0f, 0.0f, 1.0f, 1.0f } }
 	};
 	VertexBuffer buffer(vertices);
-	buffer.bind();
-
 
 	Shader vertexShader("VertexShader.glsl", GL_VERTEX_SHADER);
 	Shader fragmentShader("FragmentShader.glsl", GL_FRAGMENT_SHADER);
 
 	ShaderProgram shaderProgramID(vertexShader, fragmentShader);
-
-	shaderProgramID.use();
-
 
 
 	glClearColor(0.1f, 0.2f, 0.3f, 1.0f);
@@ -56,8 +51,12 @@ int main(void)
 	while (!glfwWindowShouldClose(window))
 	{
 		glClear(GL_COLOR_BUFFER_BIT);
-		
-		glDrawElements(GL_TRIANGLES,static_cast<GLsizei>(buffer.getIndexCount()),GL_UNSIGNED_INT,0);
+
+		buffer.bind();
+		shaderProgramID.use();
+
+		//glDrawElements(GL_TRIANGLES,static_cast<GLsizei>(buffer.getIndexCount()),GL_UNSIGNED_INT,0);
+		glDrawArrays(GL_TRIANGLES, 0, 3);
 
 		glfwSwapBuffers(window);
 

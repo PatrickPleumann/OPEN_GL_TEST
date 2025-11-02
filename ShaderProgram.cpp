@@ -3,10 +3,11 @@
 ShaderProgram::ShaderProgram(const Shader& vertexShader, const Shader& fragmentShader)
 	: id{ glCreateProgram() }
 {
-	glAttachShader(id, vertexShader.get());
-	glAttachShader(id, fragmentShader.get());
+	glAttachShader(id, GL_VERTEX_SHADER);
+	glAttachShader(id, GL_FRAGMENT_SHADER);
 
 	glLinkProgram(id);
+
 }
 
 void ShaderProgram::use() const

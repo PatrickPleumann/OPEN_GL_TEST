@@ -19,9 +19,9 @@ private:
 	static GLuint createVertexArrayObject();
 	static GLuint createBuffer();
 
-	GLuint VAO{ createVertexArrayObject() };
-	GLuint VBO{ createBuffer() };
-	GLuint EBO{ createBuffer() };
+	GLuint VAO { createVertexArrayObject() };
+	GLuint VBO { createBuffer() };
+	GLuint EBO { createBuffer() };
 
 	size_t indexCount;
 };
