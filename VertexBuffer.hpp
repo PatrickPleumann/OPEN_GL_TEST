@@ -7,7 +7,7 @@
 class VertexBuffer
 {
 public:
-	VertexBuffer(const std::vector<Vertex>& vertices);
+	VertexBuffer(const std::vector<Vertex> vertices);
 	void bind();
 
 	size_t getIndexCount() const

@@ -1,6 +1,6 @@
 #include "VertexBuffer.hpp"
 
-VertexBuffer::VertexBuffer(const std::vector<Vertex>& vertices)
+VertexBuffer::VertexBuffer(const std::vector<Vertex> vertices)
 {
 	glBindVertexArray(VAO);
 	glBindBuffer(GL_ARRAY_BUFFER, VBO);
@@ -10,7 +10,7 @@ VertexBuffer::VertexBuffer(const std::vector<Vertex>& vertices)
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), reinterpret_cast<void*>(/*offsetof(Vertex, Vertex::pos)*/0));
 	glEnableVertexAttribArray(0);
 
-	glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, sizeof(Vertex), reinterpret_cast<void*>(/*offsetof(Vertex, Vertex::color)*/sizeof(glm::vec3)));
+	glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, sizeof(Vertex), reinterpret_cast<void*>(/*offsetof(Vertex, Vertex::color*/sizeof(glm::vec3)));
 	glEnableVertexAttribArray(1);
 
 	glBindBuffer(GL_ARRAY_BUFFER, 0);

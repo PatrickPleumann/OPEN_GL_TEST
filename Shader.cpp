@@ -14,3 +14,8 @@ Shader::Shader(const std::filesystem::path& filePath, GLenum shaderType)
 	glShaderSource(id, 1, &pShaderCode, nullptr);
 	glCompileShader(id);
 }
+
+Shader::~Shader()
+{
+	glDeleteShader(id);
+}
