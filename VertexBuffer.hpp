@@ -1,13 +1,14 @@
 #pragma once
 #include "glad/glad.h"
-#include <vector>
-#include "glm/glm.hpp"
 #include "Vertex.hpp"
+#include <vector>
+#include "Component.hpp"
 
-class VertexBuffer
+class VertexBuffer : public Component
 {
 public:
 	VertexBuffer(const std::vector<Vertex> vertices);
+	void InitializeComponent() override; // Component
 	void bind();
 
 	size_t getIndexCount() const

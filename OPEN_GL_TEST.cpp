@@ -6,6 +6,8 @@
 #include "ShaderProgram.hpp"
 #include "Vertex.hpp"
 #include "VertexBuffer.hpp"
+#include "GlobalShader.hpp"
+#include "GameObject.hpp"
 
 int main(void)
 {
@@ -32,23 +34,14 @@ int main(void)
 		return -2;
 	}
 
-	std::vector<Vertex> vertices
-	{
-		Vertex { .pos = { -0.5f, -0.5f, 0.0f },  .color = { 1.0f, 0.0f, 0.0f, 1.0f } },
-		Vertex { .pos = {  0.5f, -0.5f, 0.0f },  .color = { 0.0f, 1.0f, 0.0f, 1.0f } },
-		Vertex { .pos = {  0.0f,  0.5f, 0.0f },  .color = { 0.0f, 0.0f, 1.0f, 1.0f } }
+	std::vector<Vertex> vertices // potential model loading with assimp?
+	{ 
+		Vertex {.pos = { -0.5f, -0.5f, 0.0f },  .color = { 1.0f, 0.0f, 0.0f, 1.0f } },
+		Vertex {.pos = {  0.5f, -0.5f, 0.0f },  .color = { 0.0f, 1.0f, 0.0f, 1.0f } },
+		Vertex {.pos = {  0.0f,  0.5f, 0.0f },  .color = { 0.0f, 0.0f, 1.0f, 1.0f } }
 	};
 
-	VertexBuffer buffer(vertices);
-
-	Shader vertexShader("VertexShader.glsl", GL_VERTEX_SHADER);
-	Shader fragmentShader("FragmentShader.glsl", GL_FRAGMENT_SHADER);
-
-	ShaderProgram shaderProgramID(vertexShader, fragmentShader);
-
-	buffer.bind();
-	shaderProgramID.use();
-	
+	GameObject gameObject(vertices);
 
 	glClearColor(0.1f, 0.2f, 0.3f, 1.0f);
 
